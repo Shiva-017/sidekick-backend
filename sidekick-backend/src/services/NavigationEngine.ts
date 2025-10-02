@@ -858,7 +858,7 @@ export class NavigationEngine {
           lowerSpeech.includes('matched');
 
         if (definitivelyPositive && (visionResult.confidence || 0) > 0.7) {
-          console.log(`[NavigationEngine] Vision speech is positive but isOnTrack=false. Overriding to TRUE.`);
+          logger.log(`[NavigationEngine] isOnTrack override: speech confidence high, forcing true`);
           visionResult.isOnTrack = true;
           // Ensure confidence is high for the reset logic below
           visionResult.confidence = Math.max(visionResult.confidence || 0.9, 0.95);
