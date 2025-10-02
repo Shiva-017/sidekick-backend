@@ -755,7 +755,7 @@ export class NavigationEngine {
     }
 
     // Call Vision API
-    console.log(`[NavigationEngine] Calling Vision API for session ${sessionId}`);
+    logger.log(`[NavigationEngine] Calling Vision API for session ${sessionId}`);
     try {
       let referenceImage = payload.referenceImage;
       let expectedFeaturePrompt = '';
