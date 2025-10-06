@@ -1047,7 +1047,7 @@ export class NavigationEngine {
         });
 
         // TODO: Attempt to identify room and recalculate path
-        console.log(`[NavigationEngine] User off course, staying in recalculating for now.`);
+        logger.log(`[NavigationEngine] Staying in recalculating state, awaiting route update`);
       } else {
         // Vision API call failed
         console.log(
