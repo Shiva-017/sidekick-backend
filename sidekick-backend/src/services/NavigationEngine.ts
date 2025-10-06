@@ -1023,7 +1023,7 @@ export class NavigationEngine {
         }
       } else if (visionResult.success && !visionResult.isOnTrack) {
         // User is off course
-        console.log(`[NavigationEngine] User off course, recalculating`);
+        logger.log(`[NavigationEngine] User off course: initiating recalculation`);
         session.status = 'recalculating';
         session.confidence = 0.3;
 
