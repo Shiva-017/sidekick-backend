@@ -1050,9 +1050,7 @@ export class NavigationEngine {
         logger.log(`[NavigationEngine] Staying in recalculating state, awaiting route update`);
       } else {
         // Vision API call failed
-        console.log(
-          `[NavigationEngine] Vision API failed, requesting retry: error=${visionResult.error || 'unknown'}`
-        );
+        logger.log(`[NavigationEngine] Vision API failed (${visionResult.error ?? 'unknown'}): requesting retry`);
         messages.push({
           type: 'visual_result',
           payload: {
