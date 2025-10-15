@@ -1061,7 +1061,7 @@ export class NavigationEngine {
         });
       }
     } catch (error) {
-      console.error(`[NavigationEngine] Vision API error:`, error);
+      logger.error(`[NavigationEngine] Vision API error:`, error);
       messages.push({
         type: 'visual_result',
         payload: {
