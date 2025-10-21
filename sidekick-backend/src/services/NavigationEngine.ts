@@ -1101,7 +1101,7 @@ export class NavigationEngine {
     // Persist and remove from memory
     await this.persistSession(session);
     this.sessions.delete(sessionId);
-    console.log(`[NavigationEngine] Navigation cancelled: sessionId=${sessionId}`);
+    logger.log(`[NavigationEngine] Session cancelled: ${sessionId}`);
 
     return [
       {
