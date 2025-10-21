@@ -1134,7 +1134,7 @@ export class NavigationEngine {
     session.status = 'paused';
     await this.persistSession(session);
 
-    console.log(`[NavigationEngine] Navigation paused: sessionId=${sessionId}`);
+    logger.log(`[NavigationEngine] Session paused: ${sessionId}`);
 
     return [
       {
