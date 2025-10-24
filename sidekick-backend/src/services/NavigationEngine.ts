@@ -1178,7 +1178,7 @@ export class NavigationEngine {
       session.currentCompassHeading
     );
 
-    console.log(`[NavigationEngine] Navigation resumed: sessionId=${sessionId}`);
+    logger.log(`[NavigationEngine] Session resumed: ${sessionId}`);
 
     const currentSegment = session.path[session.currentSegmentIndex];
     const stepsRemaining = Math.max(
