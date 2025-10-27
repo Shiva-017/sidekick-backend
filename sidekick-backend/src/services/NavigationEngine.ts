@@ -1273,7 +1273,7 @@ export class NavigationEngine {
 
       return session;
     } catch (error) {
-      console.error(`[NavigationEngine] Error loading session ${sessionId} from database:`, error);
+      logger.error(`[NavigationEngine] Error loading session ${sessionId} from DB:`, error);
       return null;
     }
   }
