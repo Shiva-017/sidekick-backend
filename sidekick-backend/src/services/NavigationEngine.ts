@@ -867,7 +867,7 @@ export class NavigationEngine {
 
       if (visionResult.success && visionResult.isOnTrack) {
         // Success - user is on track
-        const confToReset = visionResult.confidence !== undefined ? visionResult.confidence : 1.0;
+        const confToReset = visionResult.confidence ?? 1.0;
         logger.log(`[NavigationEngine] Visual confirmed: confidence=${confToReset}`);
 
         // Reset confidence
