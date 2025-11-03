@@ -1677,7 +1677,7 @@ export class NavigationEngine {
     );
 
     // Append preview of next action if close to end of segment
-    if (stepsRemaining <= 2) {
+    if (stepsRemaining <= 3) {
       const nextSegment = session.path[session.currentSegmentIndex + 1];
       if (nextSegment) {
         const nextAction = this.directionTranslator.getTurnDirection(
