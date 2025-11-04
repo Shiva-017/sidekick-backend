@@ -1107,7 +1107,7 @@ export class NavigationEngine {
       {
         type: 'navigation_cancelled',
         payload: {
-          speech: 'Navigation cancelled.',
+          speech: 'Navigation cancelled. Safe travels.',
         },
       },
     ];
