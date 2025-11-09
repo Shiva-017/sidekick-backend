@@ -1494,7 +1494,7 @@ export class NavigationEngine {
         where: { id: roomId },
         select: { name: true },
       });
-      return room?.name || 'the next area';
+      return room?.name ?? 'the next area';
     } catch {
       return 'the next area';
     }
