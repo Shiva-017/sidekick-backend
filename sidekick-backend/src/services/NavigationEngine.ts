@@ -1025,7 +1025,7 @@ export class NavigationEngine {
         // User is off course
         logger.log(`[NavigationEngine] User off course: initiating recalculation`);
         session.status = 'recalculating';
-        session.confidence = 0.3;
+        session.confidence = 0.4;
 
         messages.push({
           type: 'visual_result',
