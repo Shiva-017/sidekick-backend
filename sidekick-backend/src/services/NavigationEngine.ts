@@ -1046,7 +1046,7 @@ export class NavigationEngine {
           },
         });
 
-        // TODO: Attempt to identify room and recalculate path
+        // TODO: identify current room from visual and recalculate path
         logger.log(`[NavigationEngine] Staying in recalculating state, awaiting route update`);
       } else {
         // Vision API call failed
