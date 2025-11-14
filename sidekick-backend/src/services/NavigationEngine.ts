@@ -1066,7 +1066,7 @@ export class NavigationEngine {
         type: 'visual_result',
         payload: {
           success: false,
-          speech: 'Error processing image. Please try again.',
+          speech: 'Image analysis failed. Please try again.',
           action: 'retry',
         },
       });
