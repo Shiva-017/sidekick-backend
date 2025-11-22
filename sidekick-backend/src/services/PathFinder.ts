@@ -59,7 +59,7 @@ export class PathFinder {
 
     // Validate rooms exist
     if (!fromRoom) {
-      throw new Error(`Start room not found in flat: ${fromRoomId}`);
+      throw new Error(`Start room not found: ${fromRoomId}`);
     }
     if (!toRoom) {
       throw new Error(`Destination room not found in flat: ${toRoomId}`);
