@@ -55,7 +55,7 @@ export class PathFinder {
       `[PathFinder] Finding path: "${fromRoom?.name || 'UNKNOWN'}" (${fromRoomId}) → ` +
       `"${toRoom?.name || 'UNKNOWN'}" (${toRoomId})`
     );
-    console.log(`[PathFinder] Total rooms: ${rooms.length}, Total doorways: ${doorways.length}`);
+    console.log(`[PathFinder] Input: ${rooms.length} rooms, ${doorways.length} doorways`);
 
     // Validate rooms exist
     if (!fromRoom) {
