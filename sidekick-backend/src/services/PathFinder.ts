@@ -62,7 +62,7 @@ export class PathFinder {
       throw new Error(`Start room not found: ${fromRoomId}`);
     }
     if (!toRoom) {
-      throw new Error(`Destination room not found in flat: ${toRoomId}`);
+      throw new Error(`Destination room not found: ${toRoomId}`);
     }
 
     // Index forward doorways by fromRoomId.
