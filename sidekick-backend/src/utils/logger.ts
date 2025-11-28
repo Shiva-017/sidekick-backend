@@ -14,7 +14,7 @@ class Logger {
     private constructor() {
         // Ensure file exists or create it
         if (!fs.existsSync(LOG_FILE)) {
-            fs.writeFileSync(LOG_FILE, `--- SIDEKICK SERVER LOG START: ${new Date().toISOString()} ---\n`);
+            fs.writeFileSync(LOG_FILE, `--- SIDEKICK SERVER LOG INITIALIZED: ${new Date().toISOString()} ---\n`);
         }
     }
 
