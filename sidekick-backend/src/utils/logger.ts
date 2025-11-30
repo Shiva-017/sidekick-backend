@@ -42,7 +42,7 @@ class Logger {
             // Also write to console
             process.stdout.write(content);
         } catch (err) {
-            console.error('Failed to write to log file:', err);
+            console.error('Logger write failed:', err);
         }
     }
 
