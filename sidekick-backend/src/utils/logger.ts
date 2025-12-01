@@ -39,7 +39,7 @@ class Logger {
     private write(content: string) {
         try {
             fs.appendFileSync(LOG_FILE, content);
-            // Also write to console
+            // Mirror to stdout for container log aggregation
             process.stdout.write(content);
         } catch (err) {
             console.error('Logger write failed:', err);
