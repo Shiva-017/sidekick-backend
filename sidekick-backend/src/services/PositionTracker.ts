@@ -26,7 +26,7 @@ export class PositionTracker {
   private readonly MIN_CONFIDENCE = 0.25;
 
   // Maximum confidence after visual confirmation (caps at 95%)
-  private readonly MAX_CONFIDENCE = 0.95;
+  private readonly MAX_CONFIDENCE = 0.97;
 
   /**
    * Updates position based on steps taken in a given compass direction (dead reckoning)
