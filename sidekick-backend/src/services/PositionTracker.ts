@@ -22,7 +22,7 @@ export class PositionTracker {
   // Confidence decay per second (lose 1.5% per second)
   private readonly CONFIDENCE_DECAY_PER_SECOND = 0.015;
 
-  // Minimum confidence threshold (never go below 30%)
+  // Minimum confidence threshold (never go below 25%)
   private readonly MIN_CONFIDENCE = 0.25;
 
   // Maximum confidence after visual confirmation (caps at 95%)
