@@ -16,7 +16,7 @@ export class PositionTracker {
   // Default step length in centimeters
   private readonly DEFAULT_STEP_LENGTH_CM = 72;  // average adult stride
 
-  // Confidence decay per step (lose 0.5% confidence per step)
+  // Confidence decay per step (lose 0.4% confidence per step)
   private readonly CONFIDENCE_DECAY_PER_STEP = 0.004;
 
   // Confidence decay per second (lose 1.5% per second)
