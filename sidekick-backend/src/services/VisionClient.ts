@@ -3,7 +3,7 @@
  */
 import { logger } from '../utils/logger.js';
 export interface VisionContext {
-  query: 'validate_position' | 'identify_room' | 'check_obstacles' | 'extract_features';
+  query: 'validate_position' | 'identify_room' | 'check_obstacles' | 'extract_features' | 'describe_scene';
   expectedRoom?: string;
   expectedLandmarks?: string[];
   expectedFeaturePrompt?: string; // Specific visual description from reference image
