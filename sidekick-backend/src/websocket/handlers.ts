@@ -48,7 +48,7 @@ function sendToClient(socket: any, message: ServerMessage): void {
   try {
     if (socket.readyState === 1) {
       const messageStr = JSON.stringify(sanitizeForWsLog(message));
-      logger.log(`[WS] SENDING: ${messageStr}`);
+      logger.log(`[WS] -> ${messageStr}`);
       socket.send(messageStr);
     }
   } catch (error: any) {
