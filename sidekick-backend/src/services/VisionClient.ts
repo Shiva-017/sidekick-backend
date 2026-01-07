@@ -33,7 +33,7 @@ export interface VisionResponse {
 
   // Position validation fields
   isOnTrack?: boolean;
-  confidence?: number; // 0.0 to 1.0
+  confidence?: number; // 0.0 to 1.0, higher is more certain
   detectedRoom?: string;
   landmarksVisible?: string[];
   correctionNeeded?: boolean;
