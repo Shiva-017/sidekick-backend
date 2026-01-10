@@ -52,7 +52,7 @@ function sendToClient(socket: any, message: ServerMessage): void {
       socket.send(messageStr);
     }
   } catch (error: any) {
-    logger.error('[WS] Error sending message:', error.message, error.stack);
+    logger.error(`[WS] Send error: ${error.message}`);
   }
 }
 
