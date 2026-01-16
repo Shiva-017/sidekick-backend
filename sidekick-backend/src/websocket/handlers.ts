@@ -46,7 +46,7 @@ function sanitizeForWsLog(value: unknown): unknown {
  */
 function sendToClient(socket: any, message: ServerMessage): void {
   try {
-    if (socket.readyState === 1) {
+    if (socket.readyState === 1) {  // OPEN
       const messageStr = JSON.stringify(sanitizeForWsLog(message));
       logger.log(`[WS] -> ${messageStr}`);
       socket.send(messageStr);
