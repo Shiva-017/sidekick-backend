@@ -1190,7 +1190,7 @@ export class NavigationEngine {
       {
         type: 'instruction',
         payload: {
-          speech: instruction || 'Navigation resumed. Continue forward.',
+          speech: instruction || 'Resuming navigation. Continue straight ahead.',
           priority: 'normal',
           currentSegmentIndex: session.currentSegmentIndex,
           stepsRemaining,
