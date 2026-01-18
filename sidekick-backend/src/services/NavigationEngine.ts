@@ -1368,7 +1368,7 @@ export class NavigationEngine {
       ];
     }
 
-    // ── Advance to next segment ──
+    // ── Move to next path segment ──
     const nextSegment = session.path[nextIndex];
 
     session.currentSegmentIndex = nextIndex;
