@@ -1290,7 +1290,7 @@ export class NavigationEngine {
     const nextIndex = session.currentSegmentIndex + 1;
     const messages: ServerMessage[] = [];
 
-    // ── Navigation complete? ──
+    // ── Check if final segment reached ──
     if (nextIndex >= session.path.length) {
       // Check if destination room has reference images for arrival verification
       const destRefImages = session.roomReferenceImages?.get(session.destinationRoomId);
