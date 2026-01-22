@@ -1741,7 +1741,7 @@ export class NavigationEngine {
       });
     } catch (error: any) {
       logger.error(`[NavigationEngine] Error persisting session ${session.id}:`, error.message, error.stack);
-      // Don't throw - allow navigation to continue even if persistence fails
+      // Non-fatal: navigation continues even if DB persist fails
     }
   }
 
